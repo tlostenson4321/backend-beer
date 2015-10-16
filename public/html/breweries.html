@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html ng-app="beerApp">
+<head>
+<meta charset="utf-8">
+	<title>Breweries are home</title>
+	 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../css/total.css">
+  <link rel="stylesheet" type="text/css" href="../css/brewery.css">
+  <script src="../javascript/angular.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.4/ui-bootstrap-tpls.js"></script>
+</head>
+<body ng-controller="breweryController">
+<header class="head head-big">Want to get a beer from the source?</header>
+	
+ <div class="container-fluid">
+<nav class= "nav">
+  <ul class="list-unstyled">
+    <div class="row">
+    <li class= "nav-item button col-xs-10 col-sm-11"> <a href="/">Home</a></li>
+    </div>
+    <div class="row">
+    <li class= "nav-item button col-xs-10 col-sm-11"> <a href="/beer-types">Beer Types</a></li>
+    </div>
+    <div class="row">
+    <li class= "nav-item button col-xs-10 col-sm-11"> <a href="/breweries"> Breweries/Tap Rooms</a></li>
+    </div>
+  </ul>
+</nav>
+</div>
+  
+
+  <div class="content">
+    <h4 class="head head-med"> Boulder</h4>
+    <ul class="content-list">
+      <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Boulder'">
+        <h3 class="brewery-head">{{brewery.name}}</h3>
+        <p>They are located at: {{brewery.address}}</p>
+        <p>This is their webiste <a class="link"href="{{brewery.website}}">{{brewery.website}}</a></p>
+        <p> They specialize in
+        <ul class="content-list">
+          <li ng-repeat="specialty in brewery.specialties"> {{specialty}}
+          </li>
+        </ul>
+        </p>
+        <a class="link"  href="#">Back to top</a>
+      </li>
+    </ul>
+  </div> 
+  
+  <div class="content">
+    <h2 class="head head-med">Broomfield</h2>
+     <ul class="content-list">
+      <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Broomfield'">
+        <h3 class="brewery-head">{{brewery.name}}</h3>
+        <p>They are located at: {{brewery.address}}</p>
+        <p>This is their webiste {{brewery.website}}</p>
+        <p> They specialize in
+        <ul class="content-list">
+          <li ng-repeat="specialty in brewery.specialties">{{specialty}}
+          </li>
+        </ul>
+        </p>
+        <a class="link"  href="#">Back to top</a>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="content">
+    <h2 class="head head-med">Lafayette</h2>
+     <ul class="content-list">
+      <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Lafayette'">
+        <h3 class="brewery-head">{{brewery.name}}</h3>
+        <p>They are located at: {{brewery.address}}</p>
+        <p>This is their webiste {{brewery.website}}</p>
+        <p> They specialize in
+        <ul class="content-list">
+          <li ng-repeat="specialty in brewery.specialties">{{specialty}}
+          </li>
+        </ul>
+        </p>
+        <a class="link"  href="#">Back to top</a>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="content">
+    <h2 class="head head-med">Longmont</h2>
+     <ul class="content-list">
+      <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Longmont'">
+        <h3 class="brewery-head">{{brewery.name}}</h3>
+        <p>They are located at: {{brewery.address}}</p>
+        <p>This is their webiste {{brewery.website}}</p>
+        <p> They specialize in
+        <ul class="content-list">
+          <li ng-repeat="specialty in brewery.specialties">{{specialty}}
+          </li>
+        </ul>
+        </p>
+        <a class="link"  href="#">Back to top</a>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="content">
+    <h2 class="head head-med">Louisville</h2>
+     <ul class="content-list">
+      <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Louisville'">
+        <h3 class="brewery-head">{{brewery.name}}</h3>
+        <p>They are located at: {{brewery.address}}</p>
+        <p>This is their webiste {{brewery.website}}</p>
+        <p> They specialize in
+        <ul class="content-list">
+          <li ng-repeat="specialty in brewery.specialties">{{specialty}}
+          </li>
+        </ul>
+        </p>
+        <a class="link"  href="#">Back to top</a>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="content">
+    <h2 class="head head-med">Niwot</h2>
+     <ul class="content-list">
+      <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Niwot'">
+        <h3 class="brewery-head">{{brewery.name}}</h3>
+        <p>They are located at: {{brewery.address}}</p>
+        <p>This is their webiste {{brewery.website}}</p>
+        <p> They specialize in
+        <ul class="content-list">
+          <li ng-repeat="specialty in brewery.specialties">{{specialty}}
+          </li>
+        </ul>
+        </p>
+        <a class="link" href="#">Back to top</a>
+      </li>
+    </ul>
+  </div>
+
+
+      
+
+
+
+
+      
+     
+
+<script src ="../javascript/beer-types.js"></script>
+<script src ="../javascript/brewery.js"></script> 
+</body>
+</html>
+

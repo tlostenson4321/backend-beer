@@ -1,0 +1,83 @@
+
+html {
+	font-size: 14px;
+	/*background-color: #f6f6f6;*/
+	background-image: url(../images/snow-beer.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color: rgba(52, 52, 119, 1);
+	/*background-position: center; this is for larger*/
+	background-size:cover;
+	text-shadow:   
+	-1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000;
+
+}
+body {
+	background-color: transparent;
+	color: white;
+}
+.nav {
+	text-align: center;
+}
+.nav-item {
+	/*display: inline-block;*/
+	background-color: rgba(234, 220, 12, 0.7);
+	margin: 10px 15px;
+	padding: 10px;
+	text-shadow:none;
+}
+.head {
+	background-color: rgba(52, 52, 119, 0.5);
+	color: white;
+	text-align: center;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	padding: 10px 0px;
+}
+.head-big {
+	font-size: 2.5rem;
+
+}
+.head-med{
+	font-size: 2rem;
+}
+.head-small {
+	font-size: 1.5rem;
+}
+.button {
+	font-family: sans-serif;
+	font-weight: bold;
+	border-radius: 5px;
+	
+}
+.no-padding {
+	padding:0;
+}
+.no-margin {
+	margin:0;
+}
+.link {
+	color:white;
+}
+.link:hover{
+	color:rgb(106, 82, 182);
+}
+.link-big {
+	font-size: 1.3rem;
+}
+accordion div {
+	background-color: rgba(164, 0, 0, 0.3)!important;
+
+}
+accordion span{
+	font-size: 2rem;
+	color: white!important;
+}
+.margin{
+	margin-left: 10px 
+}
+.brewery-head{
+	background-color: rgba(164, 0, 0,0.7);
+}

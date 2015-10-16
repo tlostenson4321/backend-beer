@@ -1,0 +1,81 @@
+
+.select {
+	color:white;
+	background-color: rgba(164, 0, 0,0.7);
+	display: block;
+	height: 34px;
+	border-radius: 4px;
+	box-sizing: content-box;
+	margin-left: 10px;
+}
+
+.yellow-main-button {
+	margin: 40px 0px 60px 10px;
+	border:1px solid #1515bf;
+	background-color: rgba(234, 220, 12, 0.8);
+	color: #1515bf;
+	font-weight: bold;
+}
+.lightbox {
+	position:fixed;
+	z-index: 998;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(94, 94, 94, 0.75);
+	text-align: center;
+	top: 0;
+	left: 0;
+	
+}
+.lightbox-inner {
+	position: relative;
+	z-index: 999;
+	width: 50vw;
+	height: 300px;
+	color: black;
+	background-color: white;
+	top: 20vw;
+	left: 27vw;
+	border: 10px solid rgb(20 , 20 , 102) ;
+	padding: 5vw 10vw;
+}
+.lightbox-header {
+	font-size: 1em;
+	text-shadow:none;
+}
+
+.lightbox-btn {
+	margin: 10px;
+}
+
+accordion div {
+	background-color: rgba(52, 52, 119, 0.3)!important;
+
+}
+accordion span{
+	font-size: 1.5rem;
+	color: white!important;
+}
+
+
+
+
+
+/*Check this @ home.
+
+/*.input {
+	width: 50vw;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0.2);
+	color: white;
+	margin:0vw 10vw;
+	outline-color: transparent;
+	outline-style: none;
+}*/
+
+
+
+/*.input:focus {
+	background-color: rgba(0,0,0, 0.6);
+
+}*/

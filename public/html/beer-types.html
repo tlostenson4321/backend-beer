@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html ng-app="beerApp">
+<head>
+<meta charset="utf-8">
+	<title>Beers ya need</title>
+	 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../css/total.css">
+  <link rel="stylesheet" type="text/css" href="../css/beer-types.css">
+  <script src="../javascript/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.4/ui-bootstrap-tpls.js"></script>
+</head>
+<body ng-controller="beerTypeController">
+<header class="head head-big"> Know where to find your beer and just need beer ideas?</header>
+<div class="container-fluid no-padding">
+<nav class= "nav">
+  <ul class="list-unstyled">
+    <div class="row no-margin">
+    <li class= "nav-item button col-xs-10  col-sm-11"> <a href='/'>Home</a></li>
+    </div>
+    <div class="row no-margin">
+    <li class= "nav-item button col-xs-10 col-sm-11"> <a href="/beer-types">Beer Types</a></li>
+    </div>
+    <div class="row no-margin">
+    <li class= "nav-item button col-xs-10 col-sm-11"> <a href="/breweries"> Breweries/Tap Rooms</a></li>
+    </div>
+  </ul>
+</nav>
+</div>
+	
+<!-- http://jsfiddle.net/razh/NFNvc/ -->
+<!-- <a target="framename"> -->
+<!-- https://docs.angularjs.org/api/ng/service/$anchorScroll -->
+
+<div class="container-fluid no-padding no-margin">
+	<div class="row no-margin">
+	<h3 class="head head-small col-xs-12"> What type of flavor are you craving?</h3>
+	</div>
+	<!-- Add a click event, with ng-hide and show.and use filters to pull the beers per flavor -->
+	<div class="row no-margin">
+	<div class="beer-types col-xs-12">
+
+		<ul class="beer-types-list list-unstyled no-padding col-xs-10">
+			
+			<li class="beer-types-listitem"><a href="" class="link link-big">Crisp</a>
+				<ul class="inner-list col-xs-10 col-sm-11">
+					<li ng-repeat="beer in beers | filter : beer.flavor = 'Crisp'" class="inner-listitem">
+						{{beer.name}}
+					</li>
+				</ul>
+			</li>
+	
+			<li class="beer-types-listitem"><a href="" class="link link-big">Fruity</a>
+				<ul class="inner-list col-xs-10 col-sm-11">
+					<li ng-repeat="beer in beers | filter : beer.flavor = 'Fruity'" class="inner-listitem">
+						<a href="{{beer.slug}}">{{beer.name}}</a>
+					</li>
+				</ul>
+			</li>
+	
+			<li class="beer-types-listitem"><a href="" class="link link-big">Heavy</a>
+				<ul class="inner-list col-xs-10 col-sm-11">
+					<li ng-repeat="beer in beers | filter : beer.flavor = 'Heavy'" class="inner-listitem">
+						{{beer.name}}
+					</li>
+				</ul>
+			</li>
+	
+			<li class="beer-types-listitem"><a href="" class="link link-big">Hoppy</a>
+				<ul class="inner-list col-xs-10 col-sm-11">
+					<li ng-repeat="beer in beers | filter : beer.flavor = 'Hoppy'"class="inner-listitem">
+						{{beer.name}}
+					</li>
+				</ul>
+			</li>
+			<li class="beer-types-listitem"><a href="" class="link link-big">Malty/Rich</a>
+				<ul class="inner-list col-xs-10 col-sm-11">
+					<li ng-repeat="beer in beers | filter : beer.flavor = 'Malty/Rich'" class="inner-listitem">
+						{{beer.name}}
+					</li>
+				</ul>
+			</li>
+	
+			
+		</ul>
+	</div>
+	</div>
+</div>
+
+
+ 
+
+
+
+<div class="beer-flip">
+	<div class="container-fluid no-padding no-margin">
+		<div class="row no-margin">
+		<ul class="list-unstyled col-xs-12 no-padding">
+			<!-- added the class for when ng-click is added it will work separately. -->
+			<li class="front-list" ng-repeat="beer in beers">
+			
+				<h3 id="{{beer.slug}}" class="head head-small col-xs-12">A {{beer.name}} beer</h3>
+					<h4>Can include in it's flavor profile:</h4>
+					<p>
+					<ul class="list-unstyled">
+						<li ng-repeat="flavor in beer.flavors">{{flavor}}</li>
+					</ul>
+					</p>
+				<h4>It has a {{beer.strength}} flavor.</h4>
+ 				<accordion close-others="oneAtATime" class="col-xs-12">
+    				<accordion-group heading="Breweries that carry this beer" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled" >
+    					<ul class="list-unstyled">
+    						<li ng-repeat="brewery in breweries | filter:criteriaMatch(beer.name)">
+      					{{brewery.name}}d
+      						</li>
+      					</ul>
+    				</accordion-group>
+				</accordion>
+			<a href="#">Back to top</a>
+			</li>
+		</ul>
+				
+		</div>
+		
+	</div>
+
+
+</div>
+   
+
+
+   <script src ="../javascript/beer-types.js"></script> 
+</body>
+</html>
+
+<!-- look here for inspiration: -->
+<!-- http://www.splendidtable.org/story/the-7-flavor-categories-of-beer-what-they-are-how-to-pair-them and http://themayorofoldtown.com/beer/ -->
+
+<!-- maybe card flip for the different beer types and top 5?
+or drop down "nav" with beers listed underneath. 
+
+Page can jump down to each type of beer. --> 
+
+
+<!-- <a href="#anchor01"> -->
+
+
+
+
+
+
