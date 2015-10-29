@@ -2,6 +2,12 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 
+var mongoose = require('mongoose')
+// mongoose.connect('mongodb://localhost/backend-beer')
+
+var session = require('express-session')
+var passport = require('passport')
+
 // Create Express App Object \\
 var app = express();
 
@@ -15,6 +21,9 @@ app.get('/', function(req, res){
 	console.log(res.sendFile)
   res.sendFile('/html/index.html', {root: './public'})
 });
+
+
+
 app.get('/beer-types', function(req, res){
 	res.sendFile('/html/beer-types.html', {root: './public'})
 })

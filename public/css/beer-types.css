@@ -52,5 +52,9 @@ accordion span{
 	font-size: 1.5rem;
 	color: white!important;
 }
+.beer-button {
+	border-radius: 5px;
+	background-color: rgba(234, 220, 12, 0.7)
+}
 
 

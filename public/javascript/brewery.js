@@ -6,6 +6,13 @@ angular.module('beerApp')
 
 	
 	$scope.breweries = breweryFactory.breweryList
+	$scope.rate = 7;
+  	$scope.max = 10;
+  	$scope.isReadonly = false;
+
+  $scope.hoveringOver = function(value) {
+    $scope.overStar = value;
+  };
 }])
 
 // var BeerFinder = function(name, flavor)

@@ -9,6 +9,21 @@ angular.module('beerApp')
 		$scope.beers = beerFactory.beerList
 		$scope.breweries = beerFactory.breweryList
 		$scope.cities = cityFactory.cityArray
+
+  $scope.status = {
+    isopen: false
+  };
+
+  $scope.toggled = function(open) {
+    $log.log('Dropdown is now: ', open);
+  };
+
+  $scope.toggleDropdown = function($event) {
+    $event.preventDefault();
+    $event.stopPropagation();
+    $scope.status.isopen = !$scope.status.isopen;
+  };
+
 		$scope.showMe = false
 
 		$scope.clickedMe = function(){
