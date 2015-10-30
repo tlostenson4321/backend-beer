@@ -29,115 +29,139 @@
 </nav>
 </div>
   
-
-  <div class="content">
-    <h4 class="head head-med"> Boulder</h4>
+<div class="container-fluid">
+  <div class="content row">
+    <h4 class="head head-med col-xs-12"> Boulder</h4>
     <ul class="content-list">
       <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Boulder'">
-        <h3 class="brewery-head">{{brewery.name}}</h3>
+        <h3 class="brewery-head col-xs-12">{{brewery.name}}</h3>
+        <div class="col-xs-4 col-xs-offset-4">
         <p>They are located at: {{brewery.address}}</p>
         <p>This is their webiste <a class="link"href="{{brewery.website}}">{{brewery.website}}</a></p>
-        <p> They specialize in
+        <p> <b>Their specialties include:</b>
         <ul class="content-list">
           <li ng-repeat="specialty in brewery.specialties"> {{specialty}}
           </li>
         </ul>
         </p>
-        <a class="link"  href="#">Back to top</a>
+        </div>
+        <button class="button beer-button col-xs-2 col-xs-offset-1">
+          <a class="backtop" href="#">Back to top</a>
+        </button>
       </li>
     </ul>
   </div> 
   
-  <div class="content">
-    <h2 class="head head-med">Broomfield</h2>
+  <div class="content row">
+    <h2 class="head head-med col-xs-12">Broomfield</h2>
      <ul class="content-list">
       <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Broomfield'">
-        <h3 class="brewery-head">{{brewery.name}}</h3>
+        <h3 class="brewery-head col-xs-12">{{brewery.name}}</h3>
+        <div class="col-xs-4 col-xs-offset-4">
         <p>They are located at: {{brewery.address}}</p>
         <p>This is their webiste {{brewery.website}}</p>
-        <p> They specialize in
+        <p> <b>Their specialties include:</b>
         <ul class="content-list">
           <li ng-repeat="specialty in brewery.specialties">{{specialty}}
           </li>
         </ul>
         </p>
-        <a class="link"  href="#">Back to top</a>
+        </div>
+        <button class="button beer-button col-xs-2 col-xs-offset-1">
+          <a class="backtop" href="#">Back to top</a>
+        </button>
       </li>
     </ul>
   </div>
   
-  <div class="content">
-    <h2 class="head head-med">Lafayette</h2>
+  <div class="content row">
+    <h2 class="head head-med col-xs-12">Lafayette</h2>
      <ul class="content-list">
       <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Lafayette'">
-        <h3 class="brewery-head">{{brewery.name}}</h3>
+        <h3 class="brewery-head col-xs-12">{{brewery.name}}</h3>
+        <div class="col-xs-4 col-xs-offset-4">
         <p>They are located at: {{brewery.address}}</p>
         <p>This is their webiste {{brewery.website}}</p>
-        <p> They specialize in
+        <p> <b>Their specialties include:</b>
         <ul class="content-list">
           <li ng-repeat="specialty in brewery.specialties">{{specialty}}
           </li>
         </ul>
         </p>
-        <a class="link"  href="#">Back to top</a>
+        </div>
+        <button class="button beer-button col-xs-2 col-xs-offset-1">
+          <a class="backtop" href="#">Back to top</a>
+        </button>
       </li>
     </ul>
   </div>
   
-  <div class="content">
-    <h2 class="head head-med">Longmont</h2>
+  <div class="content row">
+    <h2 class="head head-med col-xs-12">Longmont</h2>
      <ul class="content-list">
       <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Longmont'">
-        <h3 class="brewery-head">{{brewery.name}}</h3>
+        <h3 class="brewery-head col-xs-12">{{brewery.name}}</h3>
+        <div class="col-xs-4 col-xs-offset-4">
         <p>They are located at: {{brewery.address}}</p>
         <p>This is their webiste {{brewery.website}}</p>
-        <p> They specialize in
+        <p> <b>Their specialties include:</b>
         <ul class="content-list">
           <li ng-repeat="specialty in brewery.specialties">{{specialty}}
           </li>
         </ul>
         </p>
-        <a class="link"  href="#">Back to top</a>
+        </div>
+        <button class="button beer-button col-xs-2 col-xs-offset-1">
+          <a class="backtop" href="#">Back to top</a>
+        </button>
       </li>
     </ul>
   </div>
   
-  <div class="content">
-    <h2 class="head head-med">Louisville</h2>
+  <div class="content row">
+    <h2 class="head head-med col-xs-12">Louisville</h2>
      <ul class="content-list">
       <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Louisville'">
-        <h3 class="brewery-head">{{brewery.name}}</h3>
+        <h3 class="brewery-head col-xs-12">{{brewery.name}}</h3>
+        <div class="col-xs-4 col-xs-offset-4">
         <p>They are located at: {{brewery.address}}</p>
         <p>This is their webiste {{brewery.website}}</p>
-        <p> They specialize in
+        <p> <b>Their specialties include:</b>
         <ul class="content-list">
           <li ng-repeat="specialty in brewery.specialties">{{specialty}}
           </li>
         </ul>
         </p>
-        <a class="link"  href="#">Back to top</a>
+        </div>
+        <button class="button beer-button col-xs-2 col-xs-offset-1">
+          <a class="backtop" href="#">Back to top</a>
+        </button>
       </li>
     </ul>
   </div>
   
-  <div class="content">
-    <h2 class="head head-med">Niwot</h2>
+  <div class="content row">
+    <h2 class="head head-med col-xs-12">Niwot</h2>
      <ul class="content-list">
       <li class= "content-item" ng-repeat="brewery in breweries | filter : brewery.location = 'Niwot'">
-        <h3 class="brewery-head">{{brewery.name}}</h3>
+        <h3 class="brewery-head col-xs-12">{{brewery.name}}</h3>
+        <div class="col-xs-4 col-xs-offset-4">
         <p>They are located at: {{brewery.address}}</p>
         <p>This is their webiste {{brewery.website}}</p>
-        <p> They specialize in
+        <p> <b>Their specialties include:</b>
         <ul class="content-list">
           <li ng-repeat="specialty in brewery.specialties">{{specialty}}
           </li>
         </ul>
         </p>
-        <a class="link" href="#">Back to top</a>
+        </div>
+        <button class="button beer-button col-xs-2 col-xs-offset-1">
+          <a class="backtop" href="#">Back to top</a>
+        </button>
       </li>
     </ul>
   </div>
-
+</div>
 
       
 
