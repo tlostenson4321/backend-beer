@@ -140,21 +140,32 @@ angular.module('beerApp')
 
 
 angular.module('beerApp')
-	.config('$routeProvider', function($routeProvider){
+	.config(['$routeProvider', function($routeProvider){
 		$routeProvider
-			.when('/breweries/:slug'{
+			.when('/breweries/:slug',{
 			templateURL : '/html/brewstemplate.html',
 			controller : 'breweryController'
 				
 			})
-	})
+	}])
 
 angular.module('beerApp')
-.controller('beerTypeController', ['$scope', 'beerFactory', function($scope, beerFactory){
+.controller('beerTypeController', ['$scope', '$http', '$routeParams', 'beerFactory', function($scope, $http, $routeParams, beerFactory){
 	
-	$http.get
-	$scope.beers = beerFactory.beerList
-	$scope.breweries = beerFactory.breweryList
+	$http.get('api/beers')
+		.then(function(returnData){
+			$scope.beers = returnData.data
+		})
+	$http.get('api/breweries')
+		.then(function(returnData){
+			$scope.breweries = returnData.data
+		})
+	$http.get('api/cities')
+		.then(function(returnData){
+			$scope.cities = returnData.data
+		})
+	// $scope.beers = beerFactory.beerList
+	// $scope.breweries = beerFactory.breweryList
 
 	$scope.criteriaMatch = function(beerType){
 		return function( brewery ){
@@ -178,7 +189,7 @@ angular.module('beerApp')
 
 	
 
-// $scope.pictures = ['beer-test.jpg', 'beer-test2.jpg']
+
 
 
 

@@ -12,7 +12,7 @@ var amber = new DB.beerModel ({
 	slug : 'amber',
 })
 amber.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
 })
 var brown = new DB.beerModel ({
 	name : 'Brown',
@@ -21,7 +21,8 @@ var brown = new DB.beerModel ({
 	slug : 'brown',
 })
 brown.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var fruit = new DB.beerModel ({
 	name : 'Fruit',
@@ -30,7 +31,8 @@ var fruit = new DB.beerModel ({
 	slug : 'fruit',
 })
 fruit.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var ipa = new DB.beerModel ({
 	name : 'IPA',
@@ -39,7 +41,8 @@ var ipa = new DB.beerModel ({
 	slug : 'ipa',
 })
 ipa.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var paleAle = new DB.beerModel ({
 	name : 'Pale Ale',
@@ -48,7 +51,8 @@ var paleAle = new DB.beerModel ({
 	slug : 'paleale',
 })
 paleAle.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var pilsner = new DB.beerModel ({
 	name : 'Pilsner',
@@ -57,7 +61,8 @@ var pilsner = new DB.beerModel ({
 	slug : 'pilsner'
 })
 pilsner.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var porter = new DB.beerModel ({
 	name : 'Porter',
@@ -66,7 +71,8 @@ var porter = new DB.beerModel ({
 	slug : 'porter'
 })
 porter.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var saison = new DB.beerModel ({
 	name : 'Saison',
@@ -75,7 +81,8 @@ var saison = new DB.beerModel ({
 	slug : 'saison'
 })
 saison.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var sour = new DB.beerModel ({
 	name : 'Sour',
@@ -84,7 +91,8 @@ var sour = new DB.beerModel ({
 	slug : 'sour'
 })
 sour.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var stout = new DB.beerModel ({
 	name : 'Stout',
@@ -93,7 +101,8 @@ var stout = new DB.beerModel ({
 	slug : 'stout'
 })
 stout.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var wheat = new DB.beerModel ({
 	name : 'Wheat',
@@ -102,7 +111,8 @@ var wheat = new DB.beerModel ({
 	slug : 'wheat'
 })
 wheat.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 
 
@@ -117,7 +127,8 @@ var avery = DB.breweryModel ({
 	slug : 'avery'
 })
 avery.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var leftHand = DB.breweryModel ({
 	name : 'Left Hand Brewery',
@@ -129,7 +140,8 @@ var leftHand = DB.breweryModel ({
 	slug : 'lefthand',
 })
 leftHand.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var boulderBeer = DB.breweryModel ({
 	name : 'Boulder Beer',
@@ -141,7 +153,8 @@ var boulderBeer = DB.breweryModel ({
 	slug : 'boulderbeer'
 })
 boulderBeer.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var fate = DB.breweryModel ({
 	name : 'FATE Brewing Company',
@@ -153,7 +166,8 @@ var fate = DB.breweryModel ({
 	slug : 'fate'
 })
 fate.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var twistedPine = DB.breweryModel ({
 	name : 'Twisted Pine Brewing',
@@ -165,7 +179,8 @@ var twistedPine = DB.breweryModel ({
 	slug : 'twisted'
 })
 twistedPine.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var southernSun = DB.breweryModel ({
 	name : 'Southern Sun Pub and Brewing',
@@ -177,7 +192,8 @@ var southernSun = DB.breweryModel ({
 	slug : 'southsun'
 })
 southernSun.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var upslope = DB.breweryModel ({
 	name : 'Upslope Brewing Company',
@@ -189,7 +205,8 @@ var upslope = DB.breweryModel ({
 	slug : 'upslope'
 })
 upslope.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var asher = DB.breweryModel ({
 	name : 'Asher Brewing Company',
@@ -201,7 +218,8 @@ var asher = DB.breweryModel ({
 	slug : 'asher'
 })
 asher.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var sanitas = DB.breweryModel ({
 	name : 'Sanitas Brewing Company',
@@ -213,7 +231,8 @@ var sanitas = DB.breweryModel ({
 	slug : 'sanitas'
 })
 sanitas.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var wildWoods = DB.breweryModel ({
 	name : 'Wild Woods Brewery',
@@ -225,7 +244,8 @@ var wildWoods = DB.breweryModel ({
 	slug : 'wildwoods'
 })
 wildWoods.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var westFlanders = DB.breweryModel ({
 	name : 'West Flanders Brewing Company',
@@ -237,7 +257,8 @@ var westFlanders = DB.breweryModel ({
 	slug : 'west'
 })
 westFlanders.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var finkleGarf = DB.breweryModel ({
 	name : 'Finkel and Garf',
@@ -249,7 +270,8 @@ var finkleGarf = DB.breweryModel ({
 	slug : 'finkel'
 })
 finkleGarf.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var vindication = DB.breweryModel ({
 	name : 'Vindication Brewing Company',
@@ -261,7 +283,8 @@ var vindication = DB.breweryModel ({
 	slug : 'vindication'
 })
 vindication.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var bootstrap = DB.breweryModel ({
 	name : 'Bootstrap Brewing Company',
@@ -273,7 +296,8 @@ var bootstrap = DB.breweryModel ({
 	slug : 'bootstrap'
 })
 bootstrap.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var powderKeg = DB.breweryModel ({
 	name : 'Powder Keg Brewing Co.',
@@ -285,7 +309,8 @@ var powderKeg = DB.breweryModel ({
 	slug : 'powder'
 })
 powderKeg.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var frontRange = DB.breweryModel ({
 	name : 'Front Range Brewing Company',
@@ -297,7 +322,8 @@ var frontRange = DB.breweryModel ({
 	slug : 'frontrange'
 })
 frontRange.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var thePost = DB.breweryModel ({
 	name : 'The Post Brewing Company',
@@ -309,7 +335,8 @@ var thePost = DB.breweryModel ({
 	slug : 'thepost'
 })
 thePost.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var twelveDegree = DB.breweryModel ({
 	name : '12Degree Brewing',
@@ -321,7 +348,8 @@ var twelveDegree = DB.breweryModel ({
 	slug : 'twelve'
 })
 twelveDegree.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var fourNoses = DB.breweryModel ({
 	name : '4 Noses Brewing Company',
@@ -333,7 +361,8 @@ var fourNoses = DB.breweryModel ({
 	slug : 'fournoses'
 })
 fourNoses.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var odd13 = DB.breweryModel ({
 	name : 'Odd13 Brewing',
@@ -345,7 +374,8 @@ var odd13 = DB.breweryModel ({
 	slug : 'odd'
 })
 odd13.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var gravity = DB.breweryModel ({
 	name : 'Gravity Brewing Company',
@@ -357,7 +387,8 @@ var gravity = DB.breweryModel ({
 	slug : 'gravity'
 })
 gravity.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var wonderland = DB.breweryModel ({
 	name : 'Wonderland Brewing Comapny',
@@ -369,7 +400,8 @@ var wonderland = DB.breweryModel ({
 	slug : 'wondeland'
 })
 wonderland.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var crystalSprings = DB.breweryModel ({
 	name : 'Crystal Springs Brewery',
@@ -381,7 +413,8 @@ var crystalSprings = DB.breweryModel ({
 	slug : 'crystal'
 })
 crystalSprings.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var oskarBlues = DB.breweryModel ({
 	name : 'Oskar Blues',
@@ -390,10 +423,11 @@ var oskarBlues = DB.breweryModel ({
 	website : 'http://www.oskarblues.com',
 	specialties : ['Hoppy beers', 'Growing off what they have previously done'],
 	beersss : [ipa, pilsner, amber, stout],
-	slug : 'orkar'
+	slug : 'oskar'
 })
 oskarBlues.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var bru = DB.breweryModel ({
 	name : 'BRU',
@@ -405,7 +439,8 @@ var bru = DB.breweryModel ({
 	slug : 'bru'
 })
 bru.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var newPlanet = DB.breweryModel ({
 	name : 'New Planet Brewery',
@@ -417,7 +452,8 @@ var newPlanet = DB.breweryModel ({
 	slug : 'newplanet'
 })
 newPlanet.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var shine = DB.breweryModel ({
 	name : 'Shine Gathering Place',
@@ -429,7 +465,8 @@ var shine = DB.breweryModel ({
 	slug : 'shine'
 })
 shine.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var jWells = DB.breweryModel ({
 	name : 'J Wells Brewery',
@@ -441,42 +478,49 @@ var jWells = DB.breweryModel ({
 	slug : 'jwells'
 })
 jWells.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 
 var boulder = DB.cityModel ({
 	name : 'Boulder'
 })
 boulder.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var broomfield = DB.cityModel ({
 	name : 'Broomfield'
 })
 broomfield.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var lafayette = DB.cityModel ({
 	name : 'Lafayette'
 })
 lafayette.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var longmont = DB.cityModel ({
 	name : 'Longmont'
 })
 longmont.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var louisville = DB.cityModel ({
 	name : 'Louisville'
 })
 louisville.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })
 var niwot = DB.cityModel ({
 	name : 'Niwot'
 })
 niwot.save(function(err, doc){
-	res.send(doc)
+	console.log(err)
+	
 })

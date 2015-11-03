@@ -5,7 +5,7 @@
 
 
 angular.module('beerApp')
-	.controller('beerFinderController', ['$scope', 'beerFactory', 'cityFactory', function($scope, beerFactory, cityFactory){
+	.controller('beerFinderController', ['$scope', '$http', 'beerFactory', 'cityFactory', function($scope, $http, beerFactory, cityFactory){
 		$scope.beers = beerFactory.beerList
 		$scope.breweries = beerFactory.breweryList
 		$scope.cities = cityFactory.cityArray
@@ -34,10 +34,10 @@ angular.module('beerApp')
 }])
 
 
-$http.get('api/beers')
-	.then(function(res){
-		$scope.beers = response.data
-	})
+// $http.get('api/beers')
+// 	.then(function(res){
+// 		$scope.beers = response.data
+// 	})
 
 // if a certain combination is chosen then it will go to the breweries page but only show the specific items that were chosen.
 

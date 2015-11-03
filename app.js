@@ -21,20 +21,24 @@ app.get('/', function(req, res){
 });
 
 
+app.get('/api/beers', function(req, res){
+	db.beers.find({}, function(err, docs){
+	res.send(docs)
+		
+	})
+})
 
-app.get('/beer-types', function(req, res){
-	res.sendFile('/html/beer-types.html', {root: './public'})
-})
-app.get('/breweries', function(req, res){
-	res.sendFile('/html/breweries.html', {root: './public'})
-})
-app.get('/brews', function(req,res){
-	res.sendFile('/html/brews.html/:slug', {root: './public'})
-})
-// app.post('/beerchoice', function(req, res){
-// 	res.redirect('/html/breweries.html')
-
+// app.get('/beer-types', function(req, res){
+// 	res.sendFile('/html/beer-types.html', {root: './public'})
 // })
+// app.get('/breweries', function(req, res){
+// 	res.sendFile('/html/breweries.html', {root: './public'})
+// })
+// app.get('/brews', function(req,res){
+// 	res.sendFile('/html/brews.html/:slug', {root: './public'})
+// })
+// 
+
 
 // Creating Server and Listening for Connections \\
 var port = 3000
