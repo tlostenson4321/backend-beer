@@ -1,6 +1,3 @@
-// $(document).on('ready', function() {
-  
-// });
 
 
 
@@ -38,25 +35,3 @@ angular.module('beerApp')
 // 	.then(function(res){
 // 		$scope.beers = response.data
 // 	})
-
-// if a certain combination is chosen then it will go to the breweries page but only show the specific items that were chosen.
-
-// filters needed are 
-// 	if (selectedBeer = Amber){
-// 		return breweries | filter brewery.beersss = 'Amber'
-// 	}
-
-// 	breweries.forEach( )
-
-
-
-
-
-
-
-
-// $scope.nope = function(){
-// 	if (nope === true) {
-// 		return alert("Sorry no can do")
-// 	}
-// }
