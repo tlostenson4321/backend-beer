@@ -1,26 +1,12 @@
-Things that still need to be done.
-
-Need to connect all of front selects.
-
-Breweries already have their location and beers added to them.
-
-Now need to have functions set for when those specific ones are clicked. 
-
-Will probably have to go through each combo of options to get it to work. Whether that be different functions. or if else functions. 
-
-Like: 
-	if amber and boulder, go to Avery. 
-
-
-
-
-
-ng-show and hide on specific items that do or don't have those beers.
-
-
-want to add ratings for breweries. so if you have been there before you can rate it. Also add full tap list. 
-
 Boulder Brew House
 
 Need Brewery logos
-Need Logo
+
+Need to get it to where the are you 21 only shows up once (SESSIONS!!!!)
+
+Need to use front end routing for brewery pages
+	$routeparams
+
+Need to add all Beer, Breweries, and Cities to a DB.
+Need own Logo
+

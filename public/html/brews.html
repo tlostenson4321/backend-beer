@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="beerApp">
+<head>
+<meta charset="utf-8">
+	<title>Beers ya need</title>
+	 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../css/total.css">
+  <link rel="stylesheet" type="text/css" href="../css/beer-types.css">
+  <script src="../javascript/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.4/ui-bootstrap-tpls.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-route.js" type="text/javascript"></script>
+</head>
+<body ng-controller="beerTypeController">
+<header class="head head-big"> Boulder BrewHub : Beers</header>
+<div class="container-fluid no-padding">
+<nav class= "nav">
+  <ul class="list-unstyled">
+    <div class="row no-margin">
+    <li class= "nav-item button col-xs-10  col-sm-11"> <a href='/'>Home</a></li>
+    </div>
+    <div class="row no-margin">
+    <li class= "nav-item button col-xs-10 col-sm-11"> <a href="/beer-types">Beer Types</a></li>
+    </div>
+    <div class="row no-margin">
+    <li class= "nav-item button col-xs-10 col-sm-11"> <a href="/breweries"> Breweries/Tap Rooms</a></li>
+    </div>
+  </ul>
+</nav>
+</div>
+
+<div ng-view>
+
+</div>
+
+<script src ="../javascript/beer-types.js"></script> 
+</body>
+</html>

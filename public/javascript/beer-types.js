@@ -39,6 +39,7 @@ angular.module('beerApp')
 			this.website = website
 			this.specialties = specialties
 			this.beersss = beersss
+			this.slug = slug
 
 		
 
@@ -138,12 +139,20 @@ angular.module('beerApp')
 
 
 
-
+angular.module('beerApp')
+	.config('$routeProvider', function($routeProvider){
+		$routeProvider
+			.when('/breweries/:slug'{
+			templateURL : '/html/brewstemplate.html',
+			controller : 'breweryController'
+				
+			})
+	})
 
 angular.module('beerApp')
 .controller('beerTypeController', ['$scope', 'beerFactory', function($scope, beerFactory){
 	
-
+	$http.get
 	$scope.beers = beerFactory.beerList
 	$scope.breweries = beerFactory.breweryList
 

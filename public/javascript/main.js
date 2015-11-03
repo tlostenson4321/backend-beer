@@ -10,26 +10,7 @@ angular.module('beerApp')
 		$scope.breweries = beerFactory.breweryList
 		$scope.cities = cityFactory.cityArray
 
-  $scope.status = {
-    isopen: false
-  };
 
-  $scope.toggled = function(open) {
-    $log.log('Dropdown is now: ', open);
-  };
-
-  $scope.toggleDropdown = function($event) {
-    $event.preventDefault();
-    $event.stopPropagation();
-    $scope.status.isopen = !$scope.status.isopen;
-  };
-
-		$scope.showMe = false
-
-		$scope.clickedMe = function(){
-			$scope.showMe = true
-
-		}
 		$scope.criteriaMatch = function(beerType, city){
 		return function( brewery ){
 			
@@ -52,6 +33,11 @@ angular.module('beerApp')
 
 }])
 
+
+$http.get('api/beers')
+	.then(function(res){
+		$scope.beers = response.data
+	})
 
 // if a certain combination is chosen then it will go to the breweries page but only show the specific items that were chosen.
 

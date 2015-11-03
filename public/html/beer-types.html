@@ -99,7 +99,7 @@
 			<!-- added the class for when ng-click is added it will work separately. -->
 			<li class="front-list" ng-repeat="beer in beers">
 			
-				<h3 id="{{beer.slug}}" class="head head-small col-xs-12">A {{beer.name}} beer</h3>
+				<h3 id="{{beer.slug}}" class="head head-med col-xs-12"><b>A {{beer.name}} Beer</b></h3>
 					<h4>Can include in it's flavor profile:</h4>
 					<p>
 					<ul class="list-unstyled">
@@ -111,7 +111,7 @@
     				<accordion-group heading="Breweries that carry this beer" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled" >
     					<ul class="list-unstyled">
     						<li ng-repeat="brewery in breweries | filter:criteriaMatch(beer.name)">
-      					<a class="link" href="/breweries/{{brewery.slug}}">{{brewery.name}}</a>
+      					<a class="link" href="/breweries#{{brewery.slug}}">{{brewery.name}}</a>
       						</li>
       					</ul>
     				</accordion-group>
