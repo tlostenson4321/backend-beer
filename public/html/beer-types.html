@@ -42,7 +42,8 @@
 
 		<ul class="beer-types-list list-unstyled no-padding col-xs-10">
 			
-			<li class="beer-types-listitem"><a href="" class="link link-big">Crisp</a>
+			<li class="beer-types-listitem">
+				<h3>Crisp</h3>
 				<ul class="inner-list col-xs-10 col-sm-11">
 					<li ng-repeat="beer in beers | filter : beer.flavor = 'Crisp'" class="inner-listitem">
 						<a class="link" href="#{{beer.slug}}">{{beer.name}}</a>
@@ -50,7 +51,8 @@
 				</ul>
 			</li>
 	
-			<li class="beer-types-listitem"><a href="" class="link link-big">Fruity</a>
+			<li class="beer-types-listitem">
+				<h3>Fruity</h3>
 				<ul class="inner-list col-xs-10 col-sm-11">
 					<li ng-repeat="beer in beers | filter : beer.flavor = 'Fruity'" class="inner-listitem">
 						<a class="link" href="#{{beer.slug}}">{{beer.name}}</a>
@@ -58,7 +60,8 @@
 				</ul>
 			</li>
 	
-			<li class="beer-types-listitem"><a href="" class="link link-big">Heavy</a>
+			<li class="beer-types-listitem">
+				<h3>Heavy</h3>
 				<ul class="inner-list col-xs-10 col-sm-11">
 					<li ng-repeat="beer in beers | filter : beer.flavor = 'Heavy'" class="inner-listitem">
 						<a class="link" href="#{{beer.slug}}">{{beer.name}}</a>
@@ -66,14 +69,16 @@
 				</ul>
 			</li>
 	
-			<li class="beer-types-listitem"><a href="" class="link link-big">Hoppy</a>
+			<li class="beer-types-listitem">
+				<h3>Hoppy</h3>
 				<ul class="inner-list col-xs-10 col-sm-11">
 					<li ng-repeat="beer in beers | filter : beer.flavor = 'Hoppy'"class="inner-listitem">
 						<a class="link" href="#{{beer.slug}}">{{beer.name}}</a>
 					</li>
 				</ul>
 			</li>
-			<li class="beer-types-listitem"><a href="" class="link link-big">Malty/Rich</a>
+			<li class="beer-types-listitem">
+				<h3>Malty/Rich</h3>
 				<ul class="inner-list col-xs-10 col-sm-11">
 					<li ng-repeat="beer in beers | filter : beer.flavor = 'Malty/Rich'" class="inner-listitem">
 						<a class="link" href="#{{beer.slug}}">{{beer.name}}</a>
@@ -117,7 +122,7 @@
     				</accordion-group>
 				</accordion>
 				<button class="button beer-button">
-					<a href="#">Back to top</a>
+					<a class="backtop" href="#">Back to top</a>
 				</button>
 			</li>
 		</ul>

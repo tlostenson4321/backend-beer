@@ -124,7 +124,8 @@ var avery = DB.breweryModel ({
 	website : 'http://averybrewing.com',
 	specialties : ['Strongly flavored Ales', 'High ABV', 'Using lots of hops, malt, AND FLAVOR'],
 	beersss : [ ipa, wheat, brown, stout, pilsner, porter, amber],
-	slug : 'avery'
+	slug : 'avery',
+	taplist : 'http://averybrewing.com/taproom/'
 })
 avery.save(function(err, doc){
 	console.log(err)
@@ -138,6 +139,7 @@ var leftHand = DB.breweryModel ({
 	specialties : ['Awesome labels', 'Seasonal Beers', 'Nitro'],
 	beersss : [ipa, stout, paleAle, pilsner, porter],
 	slug : 'lefthand',
+	taplist : 'http://lefthandbrewing.com/beers/'
 })
 leftHand.save(function(err, doc){
 	console.log(err)
@@ -150,7 +152,8 @@ var boulderBeer = DB.breweryModel ({
 	website : 'http://boulderbeer.com',
 	specialties : ["Colorado's first craft brewery", 'Barrel Aged Beers', 'Big Flavors'],
 	beersss : [ipa, porter, wheat, amber, paleAle, saison],
-	slug : 'boulderbeer'
+	slug : 'boulderbeer',
+	taplist : 'http://boulderbeer.com/beers/'
 })
 boulderBeer.save(function(err, doc){
 	console.log(err)
@@ -163,7 +166,8 @@ var fate = DB.breweryModel ({
 	website : 'http://fatebrewingcompany.com',
 	specialties : ['Creating something different', 'Adding unexpected flavors'],
 	beersss : [ipa, stout, wheat, pilsner],
-	slug : 'fate'
+	slug : 'fate',
+	taplist : 'http://fatebrewingcompany.com/beer/'
 })
 fate.save(function(err, doc){
 	console.log(err)
@@ -176,7 +180,8 @@ var twistedPine = DB.breweryModel ({
 	website : 'http://twistedpinebrewing.com',
 	specialties : ['High quality products', 'Experimentation'],
 	beersss : [ipa, paleAle, saison, wheat, stout],
-	slug : 'twisted'
+	slug : 'twisted',
+	taplist : 'http://twistedpinebrewing.com/brewery/#our-flagship-beers'
 })
 twistedPine.save(function(err, doc){
 	console.log(err)
@@ -189,7 +194,8 @@ var southernSun = DB.breweryModel ({
 	website : 'http://mountainsunpub.com',
 	specialties : ['Hoppy Beers', 'Ales'],
 	beersss : [wheat, stout, paleAle, porter, amber, ipa],
-	slug : 'southsun'
+	slug : 'southsun',
+	taplist : 'http://www.mountainsunpub.com/beerListHouseAles.php'
 })
 southernSun.save(function(err, doc){
 	console.log(err)
@@ -202,7 +208,8 @@ var upslope = DB.breweryModel ({
 	website : 'http://upslopebrewing.com',
 	specialties : ['Beers made in small batches', 'Cool cans'],
 	beersss : [paleAle, ipa, brown, sour, stout],
-	slug : 'upslope'
+	slug : 'upslope',
+	taplist : 'http://upslopebrewing.com/beer/'
 })
 upslope.save(function(err, doc){
 	console.log(err)
@@ -215,7 +222,8 @@ var asher = DB.breweryModel ({
 	website : 'http://asherbrewing.com',
 	specialties : ["Colorado's First all Organic Brewery", 'Run on 100% wind power'],
 	beersss : [ipa, amber, wheat],
-	slug : 'asher'
+	slug : 'asher',
+	taplist : 'http://asherbrewing.com/organic-beer/'
 })
 asher.save(function(err, doc){
 	console.log(err)
@@ -228,7 +236,8 @@ var sanitas = DB.breweryModel ({
 	website : 'http://sanitasbreweing.com',
 	specialties : ['Quirky beers', 'Lots of fruit, hops, and coffee'],
 	beersss : [ipa, sour, brown, amber, stout, fruit],
-	slug : 'sanitas'
+	slug : 'sanitas',
+	taplist : 'http://www.sanitasbrewing.com/#!page2/cjg9'
 })
 sanitas.save(function(err, doc){
 	console.log(err)
@@ -241,7 +250,8 @@ var wildWoods = DB.breweryModel ({
 	website : 'http://wildwoodsbrewery.com',
 	specialties : ['Beers based on outdoor activities'],
 	beersss : [ipa, paleAle, amber, porter, stout, wheat, fruit],
-	slug : 'wildwoods'
+	slug : 'wildwoods',
+	taplist : 'http://www.wildwoodsbrewery.com/#!beer/cigc'
 })
 wildWoods.save(function(err, doc){
 	console.log(err)
@@ -254,7 +264,8 @@ var westFlanders = DB.breweryModel ({
 	website : 'http://wfbrews.com',
 	specialties : ['Balanced flavors', 'Crazy stories'],
 	beersss : [ipa, paleAle, pilsner, porter, sour],
-	slug : 'west'
+	slug : 'west',
+	taplist : 'http://wfbrews.com/'
 })
 westFlanders.save(function(err, doc){
 	console.log(err)
@@ -267,7 +278,8 @@ var finkleGarf = DB.breweryModel ({
 	website : 'http://finkelandgarf.com',
 	specialties : ['Flavorful beers', 'Still kids at heart'],
 	beersss : [stout, ipa, amber, wheat, fruit, sour],
-	slug : 'finkel'
+	slug : 'finkel',
+	taplist : 'http://finkelandgarf.com/'
 })
 finkleGarf.save(function(err, doc){
 	console.log(err)
@@ -280,7 +292,8 @@ var vindication = DB.breweryModel ({
 	website : 'http://vindicationbrewing.com',
 	specialties : ['Attention to Deatail', 'Specialty equipment', 'Mixtures of flavors'],
 	beersss : [ipa, amber, fruit, wheat, stout],
-	slug : 'vindication'
+	slug : 'vindication',
+	taplist : 'http://vindicationbrewing.com/beers/'
 })
 vindication.save(function(err, doc){
 	console.log(err)
@@ -293,7 +306,8 @@ var bootstrap = DB.breweryModel ({
 	website : 'http://bootstrapbrewing.com',
 	specialties : ['Easy to drink Beers with lots of flavor'],
 	beersss : [amber, paleAle, wheat, ipa, brown, stout],
-	slug : 'bootstrap'
+	slug : 'bootstrap',
+	taplist : 'http://www.bootstrapbrewing.com/BEER.html'
 })
 bootstrap.save(function(err, doc){
 	console.log(err)
@@ -306,7 +320,8 @@ var powderKeg = DB.breweryModel ({
 	website : 'http://powderkepbrewingcompany.com',
 	specialties : ['American and Belgian-style Ales'],
 	beersss : [stout, paleAle, saison, amber],
-	slug : 'powder'
+	slug : 'powder',
+	taplist : 'http://www.powderkegbrewingcompany.com/beers'
 })
 powderKeg.save(function(err, doc){
 	console.log(err)
@@ -319,7 +334,8 @@ var frontRange = DB.breweryModel ({
 	website : 'http://frontrangebrewingcompany.com',
 	specialties : ['Americanizing foreign beer types'],
 	beersss : [wheat, pilsner, amber, ipa, stout],
-	slug : 'frontrange'
+	slug : 'frontrange',
+	taplist : 'http://www.frontrangebrewingcompany.com/beers/'
 })
 frontRange.save(function(err, doc){
 	console.log(err)
@@ -332,7 +348,8 @@ var thePost = DB.breweryModel ({
 	website : 'http://postbrewing.com',
 	specialties : ['Strong flavors', 'Drinkable beers'],
 	beersss : [pilsner, paleAle, ipa],
-	slug : 'thepost'
+	slug : 'thepost',
+	taplist : 'http://www.postbrewing.com/brewery/'
 })
 thePost.save(function(err, doc){
 	console.log(err)
@@ -345,7 +362,8 @@ var twelveDegree = DB.breweryModel ({
 	website : 'http://12degree.com',
 	specialties : ['Belgian-inspired Artisinal Ales'],
 	beersss : [saison, wheat, ipa, amber],
-	slug : 'twelve'
+	slug : 'twelve',
+	taplist : 'http://www.12degree.com/'
 })
 twelveDegree.save(function(err, doc){
 	console.log(err)
@@ -358,7 +376,8 @@ var fourNoses = DB.breweryModel ({
 	website : 'http://4nosesbrewing.com',
 	specialties : ['Barrel Aged Beers', 'Fresh Flavors'],
 	beersss : [wheat, ipa, porter, paleAle],
-	slug : 'fournoses'
+	slug : 'fournoses',
+	taplist : 'http://4nosesbrewing.com/on-tap'
 })
 fourNoses.save(function(err, doc){
 	console.log(err)
@@ -371,7 +390,8 @@ var odd13 = DB.breweryModel ({
 	website : 'http://odd13brewing.com',
 	specialties : ['beers with a story(no really)', 'reduced gluten beers'],
 	beersss : [ipa, sour, amber, stout],
-	slug : 'odd'
+	slug : 'odd',
+	taplist : 'http://www.odd13brewing.com/content/taplist.html'
 })
 odd13.save(function(err, doc){
 	console.log(err)
@@ -384,7 +404,8 @@ var gravity = DB.breweryModel ({
 	website : 'http://thegravitybrewing.com',
 	specialties : ['"One pint is worth a thousand words"'],
 	beersss : [pilsner, fruit, saison, stout, wheat, ipa, amber],
-	slug : 'gravity'
+	slug : 'gravity',
+	taplist : 'http://thegravitybrewing.com/beers-on-tap/'
 })
 gravity.save(function(err, doc){
 	console.log(err)
@@ -397,7 +418,8 @@ var wonderland = DB.breweryModel ({
 	website : 'http://wonderlandbrewing.com',
 	specialties : ['"Care, Creativity and Time"', 'Beer as therapy'],
 	beersss : [wheat, ipa, saison, fruit, porter, amber, stout, paleAle],
-	slug : 'wondeland'
+	slug : 'wondeland',
+	taplist : 'http://wonderlandbrewing.com/beer/'
 })
 wonderland.save(function(err, doc){
 	console.log(err)
@@ -410,7 +432,8 @@ var crystalSprings = DB.breweryModel ({
 	website : 'http://crystalsprinsbrewing.com',
 	specialties : ['Small batches', 'Seasonal beers'],
 	beersss : [ipa, wheat, paleAle, fruit, porter, amber, stout],
-	slug : 'crystal'
+	slug : 'crystal',
+	taplist : 'http://crystalspringsbrewing.com/beers/'
 })
 crystalSprings.save(function(err, doc){
 	console.log(err)
@@ -423,7 +446,8 @@ var oskarBlues = DB.breweryModel ({
 	website : 'http://www.oskarblues.com',
 	specialties : ['Hoppy beers', 'Growing off what they have previously done'],
 	beersss : [ipa, pilsner, amber, stout],
-	slug : 'oskar'
+	slug : 'oskar',
+	taplist : 'http://www.oskarblues.com/#mamas'
 })
 oskarBlues.save(function(err, doc){
 	console.log(err)
@@ -436,7 +460,8 @@ var bru = DB.breweryModel ({
 	website : 'http://bruboulder.com',
 	specialties : ['Using great ingredients', 'Use wind power'],
 	beersss : [brown, ipa, amber, paleAle],
-	slug : 'bru'
+	slug : 'bru',
+	taplist : 'http://www.bruboulder.com/bru-handbuilt-beer/'
 })
 bru.save(function(err, doc){
 	console.log(err)
@@ -449,7 +474,8 @@ var newPlanet = DB.breweryModel ({
 	website : 'http://www.newplanetbeer.com',
 	specialties : ['Only brewery in CO that produces only Gluten Free beers'],
 	beersss : [paleAle, wheat, fruit],
-	slug : 'newplanet'
+	slug : 'newplanet',
+	taplist : 'http://www.newplanetbeer.com/tasting-room-information/?ao_confirm'
 })
 newPlanet.save(function(err, doc){
 	console.log(err)
@@ -462,7 +488,8 @@ var shine = DB.breweryModel ({
 	website : 'http://www.shineboulder.com',
 	specialties : ['"Every batch is infused with Rose Quartz Essence, a homemade infusion of the energies of compassion, harmony and unconditional love."'],
 	beersss : [ipa, paleAle, pilsner, amber, stout],
-	slug : 'shine'
+	slug : 'shine',
+	taplist : 'http://www.shineboulder.com/brewery/'
 })
 shine.save(function(err, doc){
 	console.log(err)
@@ -475,7 +502,8 @@ var jWells = DB.breweryModel ({
 	website : 'http://jwellsbrewery.com',
 	specialties : ['Smallest nano brewery in Boulder'],
 	beersss : [ipa, stout, amber, brown],
-	slug : 'jwells'
+	slug : 'jwells',
+	taplist : 'http://jwellsbrewery.com/beers/'
 })
 jWells.save(function(err, doc){
 	console.log(err)

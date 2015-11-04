@@ -15,7 +15,20 @@
 .brewery-head{
 	background-color: rgba(164, 0, 0,0.7);
 	text-align: center;
+	font-size: 1.5rem;
 }
-.backtop {
-	color:black;
+
+.font {
+	font-size: 1.4rem;
+}
+/*.brewery-item: {
+	font-size: 1.rem;
+}*/
+
+.item {
+	font-size: 1.15rem;
+}
+.background {
+	background-color: rgba(164, 0, 0,0.7);
+
 }

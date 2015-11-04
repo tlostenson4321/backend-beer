@@ -2,7 +2,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var DB = require('./models/beermodels');
-var session = require('express-session')
+
 
 var mongoose = require('mongoose')
 mongoose.connect('mongodb://localhost/backend-beer')

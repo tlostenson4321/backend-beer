@@ -18,9 +18,9 @@ var brewerySchema = mongoose.Schema ({
 	website : {type : String},
 	specialties : {type : Array},
 	beersss : {type : Array},
-	slug : {type : String}
-});
-
+	slug : {type : String},
+	taplist : {type : String}
+})
 var breweryModel = mongoose.model('Brewery', brewerySchema)
 
 var citySchema = mongoose.Schema({
