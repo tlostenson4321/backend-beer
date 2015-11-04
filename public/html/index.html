@@ -90,7 +90,7 @@
       <!-- added the class for when ng-click is added it will work separately. -->
       <li ng-repeat="beer in beers | filter : {name: selectedBeer.name}">
         <accordion class="col-xs-11">
-            <accordion-group heading="{{beer.name}}" >
+            <accordion-group heading="{{beer.name}}"  is-open="true" is-disabled="status.isFirstDisabled">
               <ul class="list-unstyled">
                 <li ng-repeat="brewery in breweries | filter : criteriaMatch(selectedBeer, selectedCity)">
                 <accordion>
