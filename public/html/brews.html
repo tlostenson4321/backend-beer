@@ -16,7 +16,7 @@
 <nav class= "nav">
   <ul class="list-unstyled">
     <div class="row no-margin">
-    <li class= "nav-item button col-xs-10  col-sm-11"> <a href='/'>Home</a></li>
+    <li class= "nav-item button col-xs-10  col-sm-11"> <a href='/home2'>Home</a></li>
     </div>
     <div class="row no-margin">
     <li class= "nav-item button col-xs-10 col-sm-11"> <a href="/beer-types">Beer Types</a></li>
@@ -28,7 +28,17 @@
 </nav>
 </div>
 
-<div ng-view>
+<div >
+<h2 class= "head head-big">{{brewery.name}}</h2>
+
+<p>They are located at: {{brewery.address}}</p>
+<p>This is their webiste <a class="link"href="{{brewery.website}}">{{brewery.website}}</a></p>
+<p> <b>Their specialties include:</b>
+<ul class="content-list">
+    <li ng-repeat="specialty in brewery.specialties">{{specialty}}
+    </li>
+</ul>
+</p>
 
 </div>
 

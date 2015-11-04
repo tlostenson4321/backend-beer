@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="beerApp">
+<head>
+  <meta charset="utf-8">
+  <title>In need of beer</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css">
+   <link rel="stylesheet" type="text/css" href="../css/total.css">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+   <script src="../javascript/angular.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-animate.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.4/ui-bootstrap-tpls.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-route.js" type="text/javascript"></script>
+</head>
+<body ng-controller="beerFinderController">
+
+<header class="head head-big">Boulder BrewHub!
+
+</header>
+<div class="container-fluid">
+<nav class= "nav">
+  <ul class="list-unstyled">
+    <div class="row">
+    <li class= "nav-item button col-xs-10 col-sm-11 col-md-offset-1"> <a href="/home2">Home</a></li>
+    </div>
+    <div class="row">
+    <li class= "nav-item button col-xs-10 col-sm-11 col-md-offset-1"> <a href="/beer-types">Beer Types</a></li>
+    </div>
+    <div class="row">
+    <li class= "nav-item button col-xs-10 col-sm-11 col-md-offset-1"> <a href="/breweries"> Breweries/Tap Rooms</a></li>
+    </div>
+  </ul>
+</nav>
+</div>
+
+
+
+
+
+
+
+<!-- Beer types  -->
+<form>
+<div class="container-fluid">
+<div class="row">
+<h3 class="head head-small col-xs-12">What type of beer are you in the mood for?</h3>
+</div>
+<div class="row">
+  <select ng-change="test()" class="select col-xs-10 col-sm-11" ng-model="selectedBeer" ng-options="beers.name for beers in beers">
+    
+    <option value="" class="select-option"> -Select One-</option>
+ </select>
+ </div>
+
+
+
+
+ <!-- Location -->
+ <div class="row">
+ <h3 class ="head head-small col-xs-12">Please choose which city you are closest to.</h3>
+ </div>
+ <div class="row">
+  <select ng-change="otherTest()" class="select col-xs-10 col-sm-11" ng-model="selectedCity" ng-options="cities.name for cities in cities">
+    <option value=""> -Select One-</option>
+  </select>
+  </div>
+
+  <div class="row">
+  <input ng-click="clickedMe()" type="submit" class="btn yellow-main-button col-xs-10  col-sm-11">
+  </div>
+</div>
+</form>
+
+
+    <!--   <li ng-repeat="beer in beers | filter : {name: selectedBeer.name}"> -->
+
+<div class="beer-flip" ng-show ="showMe">
+  <div class="container-fluid no-padding no-margin">
+    <div class="row no-margin">
+    <ul class="list-unstyled no-padding">
+      <!-- added the class for when ng-click is added it will work separately. -->
+      <li ng-repeat="beer in beers | filter : {name: selectedBeer.name}">
+        <accordion class="col-xs-11">
+            <accordion-group heading="{{beer.name}}" >
+              <ul class="list-unstyled">
+                <li ng-repeat="brewery in breweries | filter : criteriaMatch(selectedBeer, selectedCity)">
+                <accordion>
+                  <accordion-group heading="{{brewery.name}}" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
+                
+                  <p>They are located at: {{brewery.address}}</p>
+                  <p>This is their webiste <a class="link"href="{{brewery.website}}">{{brewery.website}}</a></p>
+                  <p> They specialize in:
+                  <ul class="list-unstyled">
+                    <li ng-repeat="specialty in brewery.specialties"> {{specialty}}
+                    </li>
+                  </ul>
+                  </p>
+                  </accordion-group>
+                  </accordion>
+                </li>
+              </ul>
+            
+      
+            </accordion-group>
+        </accordion>
+      </li>
+    </ul>
+        
+    </div>
+    
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+  <script src="../javascript/beer-types.js"></script>
+<!--   // <script src="../javascript/main.js"></script> -->
+
+</body>
+</html>

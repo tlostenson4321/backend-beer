@@ -16,7 +16,7 @@
 <nav class= "nav">
   <ul class="list-unstyled">
     <div class="row no-margin">
-    <li class= "nav-item button col-xs-10  col-sm-11"> <a href='/'>Home</a></li>
+    <li class= "nav-item button col-xs-10  col-sm-11"> <a href='/home2'>Home</a></li>
     </div>
     <div class="row no-margin">
     <li class= "nav-item button col-xs-10 col-sm-11"> <a href="/beer-types">Beer Types</a></li>
@@ -111,7 +111,7 @@
     				<accordion-group heading="Breweries that carry this beer" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled" >
     					<ul class="list-unstyled">
     						<li ng-repeat="brewery in breweries | filter:criteriaMatch(beer.name)">
-      					<a class="link" href="/breweries#{{brewery.slug}}">{{brewery.name}}</a>
+      					<a class="link" id="{{brewery.slug}}" href="/brews/{{brewery.name}}">{{brewery.name}}</a>
       						</li>
       					</ul>
     				</accordion-group>
