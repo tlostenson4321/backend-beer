@@ -89,6 +89,5 @@ accordion span{
 	color:black;
 }
 .red {
-	color : rgba(164, 0, 0, 1);
-	
+	text-decoration: underline;
 }
